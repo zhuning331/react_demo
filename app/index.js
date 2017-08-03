@@ -9,11 +9,15 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div style={divStyle}>
         <h1>Hello, World!</h1>
       </div>
     );
   }
 }
+
+const divStyle = {
+  color: 'green'
+};
 
 ReactDOM.render(<App />, document.getElementById('app'));
